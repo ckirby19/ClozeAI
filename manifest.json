@@ -1,0 +1,25 @@
+{
+  "name": "Cloze Test Generator AI",
+  "version": "0.2",
+  "manifest_version": 3,
+  "description": "Generate a cloze test from any input text",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["sidePanel", "aiLanguageModelOriginTrial"],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnhuUV+d5hXQVljozBcfyOjy43B4+6dWHs/jA2dZFnU5BDWM5C5+5MH3OHEcMRYBQJTWzyj0GG5m1pSzP7U6ZYyQ/jB+loaZD4iBqZo1njIR9Dz/w0GLevpR23A66tVD1FatpZgCpWe+Sj+YTuiqhKZ7nq4i/CxtV3VVZe3c21UvAG5kj1YJQxfvIwUSLr3MMGSfExvlAZk25ltKLi59gg1jDy7JiedxWK/2Dsth3NwWQt9JHFsn73CjkcVq/+9wJIPu/spadDfKXi+Zh/3o597RIadAR86CcTnuitkXinhLC0pf10JgSzkPcJ+P3crOxh1qTWudX6HIX18gOqa1OMQIDAQAB",
+  "trial_tokens": ["AsFlulNwkBq60VvgWSzoPaDom319ygVVX5pC3Zs1JKm6F9tHi5VIFCZYO7TA/u5NhAMW8CEdgeXHiLk1xMhv1gMAAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vZGhvcGFqZWRsam1obGFra2ptY21vaG1kaHBtcGltaGQiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9"],
+  "minimum_chrome_version": "131",
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "default_title": "Generate Cloze Test"
+  }
+}
